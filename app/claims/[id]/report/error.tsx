@@ -1,0 +1,2 @@
+"use client";
+export default function ReportError({ retry }: { retry: () => void }) { return <section role="alert" className="rounded-xl border border-line bg-white p-6"><h2 className="text-xl font-semibold">Report unavailable</h2><p className="mt-3 text-sm leading-7">The packet or review history could not be verified. Its report is withheld.</p><button type="button" className="button-secondary mt-4" onClick={retry}>Try again</button></section>; }

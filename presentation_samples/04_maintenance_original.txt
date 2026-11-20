@@ -1,0 +1,9 @@
+FICTIONAL DEMONSTRATION RECORD — Maintenance report
+Chamber: CH-1 | Refrigeration unit: REF-01
+Service date: 10 March 2026 (all times IST, +05:30)
+
+The operator reported a compressor fault at 01:10 on 10 March 2026. The technician attended refrigeration unit REF-01 and recorded a compressor fault as the reported cause of the interruption. This report describes equipment service only and does not establish the condition of any potatoes held in the chamber.
+
+Repair work was completed at 05:00 on 10 March 2026. Refrigeration restarted at 05:10 on 10 March 2026. The operator was asked to retain the temperature records and check the chamber readings after restart. Cooling can continue after equipment resumes operation; the temperature log should be reviewed alongside this report.
+
+The technician did not inspect stock or verify batch quantities and recorded values. A separate stock inspection report is not included with this fictional record. Prepared by Demo Service Technician for the ColdCover demonstration.

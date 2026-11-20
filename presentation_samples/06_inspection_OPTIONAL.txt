@@ -1,0 +1,7 @@
+FICTIONAL DEMONSTRATION RECORD — Stock inspection report
+Chamber CH-1; commodity: potatoes; inspection date: 2026-03-10T08:00:00+05:30.
+Batch refs (copied from register): A / B / C; this list does not establish presence during the temperature interval.
+
+The fictional inspector reviewed the accessible storage area and recorded that a separate assessment is needed to establish the condition of the stock. This report contains observations only; it does not declare any batch deteriorated. Inventory quantity, entry and exit times, and recorded values should be taken from the batch register and checked against supporting stock records.
+
+Review this note with the temperature log and equipment report. Any difference between records should be clarified with the operator without assigning blame. This inspection does not calculate compensation, make a coverage decision, or determine payment. All people, goods, times and observations in this document are fictional demonstration material. Prepared by Demo Stock Inspector for human review.

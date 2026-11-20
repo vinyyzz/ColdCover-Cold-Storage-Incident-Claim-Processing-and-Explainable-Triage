@@ -1,0 +1,8 @@
+FICTIONAL DEMONSTRATION RECORD — Supplementary maintenance note
+Equipment ID: REF-01
+Service date: 10 March 2026 (all times IST, +05:30)
+Reported fault: compressor fault
+Reported cause: compressor fault
+Refrigeration restarted: 2026-03-10T04:00:00+05:30
+
+This fictional supplementary note records the operator's stated restart time for human review. It describes refrigeration service only. It does not establish the condition of any potatoes, verify batch quantities or recorded values, or establish policy cover. Another maintenance report may record a different restart time. Retain both originals, compare their exact passages with the temperature log, and ask the operator to clarify the difference. Cooling can continue after a restart. No stock inspection was performed for this note. Prepared by a fictional technician solely for this demonstration.

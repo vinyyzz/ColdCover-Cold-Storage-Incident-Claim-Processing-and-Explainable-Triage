@@ -1,0 +1,5 @@
+FICTIONAL CORRECTION PRACTICE RECORD
+Equipment ID: REF-02
+Verified equipment annotation: REF-01
+
+This fictional text deliberately has two different equipment identifiers for a literal-source correction exercise. A human must confirm which line supports the selected field. It does not determine stock condition, policy cover or payment.

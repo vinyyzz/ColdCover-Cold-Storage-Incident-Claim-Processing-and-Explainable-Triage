@@ -1,0 +1,3 @@
+timestamp,temperature_c
+2026-03-12T00:00:00+05:30,3.2
+2026-03-12T00:10:00+05:30,not-a-number

@@ -1,0 +1,20 @@
+CREATE TABLE `document_copies` (
+	`document_id` text PRIMARY KEY NOT NULL,
+	`source_document_id` text NOT NULL,
+	`source_incident_id` text NOT NULL,
+	`source_correction_id` text,
+	`source_correction_revision` integer NOT NULL,
+	`analysis_id` text NOT NULL,
+	`request_json` text NOT NULL,
+	`source_snapshot_json` text NOT NULL,
+	`actor` text NOT NULL,
+	`created_at` text NOT NULL,
+	FOREIGN KEY (`document_id`) REFERENCES `documents`(`id`) ON UPDATE no action ON DELETE no action,
+	FOREIGN KEY (`source_document_id`) REFERENCES `documents`(`id`) ON UPDATE no action ON DELETE no action,
+	FOREIGN KEY (`source_incident_id`) REFERENCES `incidents`(`id`) ON UPDATE no action ON DELETE no action,
+	FOREIGN KEY (`source_correction_id`) REFERENCES `document_corrections`(`id`) ON UPDATE no action ON DELETE no action,
+	FOREIGN KEY (`analysis_id`) REFERENCES `analysis_runs`(`id`) ON UPDATE no action ON DELETE no action,
+	CONSTRAINT "document_copy_distinct_source" CHECK("document_copies"."document_id" != "document_copies"."source_document_id"),
+	CONSTRAINT "document_copy_source_revision" CHECK(("document_copies"."source_correction_id" IS NULL AND "document_copies"."source_correction_revision" = 0) OR ("document_copies"."source_correction_id" IS NOT NULL AND "document_copies"."source_correction_revision" > 0)),
+	CONSTRAINT "document_copy_actor" CHECK("document_copies"."actor" = 'storage_operator')
+);
