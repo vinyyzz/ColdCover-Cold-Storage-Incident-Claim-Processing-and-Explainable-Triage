@@ -11,10 +11,12 @@ git clone https://github.com/vinyyzz/ColdCover-Cold-Storage-Incident-Claim-Proce
 cd ColdCover
 npm ci
 npm run seed
-npm run dev
+npm run dev -- --hostname 127.0.0.1
 ```
 
-If you already have the project, run the last three commands from its root. Open the Local URL printed by Next.js, usually [http://localhost:3000](http://localhost:3000). If that port is occupied, run `npm run dev -- --hostname 127.0.0.1 --port 3100` and open [http://localhost:3100](http://localhost:3100).
+If you already have the project, run the last three commands from its root. Open the Local URL printed by Next.js, usually [http://127.0.0.1:3000](http://127.0.0.1:3000). If that port is occupied, run `npm run dev -- --hostname 127.0.0.1 --port 3100` and open [http://127.0.0.1:3100](http://127.0.0.1:3100).
+
+If Next.js exits after displaying a version advisory, repeat the development command for the local demo. Keep this version on localhost. Next.js publishes fixes for the pinned version's known advisories in its [security release notes](https://github.com/vercel/next.js/releases/tag/v16.4.5).
 
 The seed applies the tracked database migrations and adds the fictional worked example. It creates a local SQLite file at `data/coldcover.db` by default. If you need a different file, copy `.env.example` to `.env.local` and set `DATABASE_URL` to a local SQLite file URL. Setup requires no API keys.
 
@@ -37,7 +39,7 @@ npm run typecheck
 npm run build
 ```
 
-After building, run `npm start` to serve the production build locally. Stop the development instance first or select a different port. Use a fresh local database for rehearsals that write records. Re-running the seed preserves existing records.
+After building, run `npm start -- --hostname 127.0.0.1` to serve the production build locally. Stop the development instance first or select a different port. Use a fresh local database for rehearsals that write records. Re-running the seed preserves existing records.
 
 ColdCover uses Next.js, React, strict TypeScript, Tailwind CSS, Drizzle, SQLite, Zod, Recharts, and Vitest. Application code is under `app/` and `lib/`. Database migrations and their metadata are tracked under `drizzle/`.
 
